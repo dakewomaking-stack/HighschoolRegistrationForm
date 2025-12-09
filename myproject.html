@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Student Registration</title>
+
+    <link rel="stylesheet" href="myproject.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>High School Student Registration</h2>
+
+        <form id="regForm" class="reg-form">
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number">
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Birth Date</label>
+                <input type="date" id="birthdate">
+                <span class="error" id="birthError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Nationality</label>
+                <input type="text" id="nationality" placeholder="Enter nationality">
+                <span class="error" id="nationalityError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+                <select id="gender">
+                    <option value="">-- Select --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <span class="error" id="genderError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Grade (9–12)</label>
+                <select id="grade">
+                    <option value="">-- Select Grade --</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <span class="error" id="gradeError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Zone</label>
+                <input type="text" id="zone" placeholder="Enter zone">
+                <span class="error" id="zoneError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Woreda</label>
+                <input type="text" id="woreda" placeholder="Enter woreda">
+                <span class="error" id="woredaError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Kebele</label>
+                <input type="text" id="kebele" placeholder="Enter kebele">
+                <span class="error" id="kebeleError"></span>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+        </form>
+
+    </div>
+
+    <!-- Success Popup -->
+    <div id="popup">
+        <div class="popup-box">
+            <h3>Registration Successful!</h3>
+            <p>The student has been registered successfully.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="myproject.js"></script>
+</body>
+
+</html>
